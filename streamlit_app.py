@@ -41,7 +41,7 @@ map_html = get_map()
 page_bg_img = f"""
 <style>
     h1 {{
-        margin-top: -500px;
+        margin-top: -100px;
         font-family: 'Montserrat';
         color: white;
         }}
@@ -71,9 +71,9 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 
-st.title('Carte titre test')
 
 with st.container():  
+    st.title('Carte titre test')
     components.html(map_html)
 
 
