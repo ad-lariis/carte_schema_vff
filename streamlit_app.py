@@ -12,11 +12,7 @@ Created on Fri Jan 17 11:56:39 2025
 import streamlit as st
 from st_files_connection import FilesConnection
 import streamlit.components.v1 as components
-from PIL import Image
-import pandas as pd
-import geopandas as gpd
 
-from res import legende_html
 
 
 
