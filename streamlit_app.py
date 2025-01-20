@@ -40,11 +40,14 @@ map_html = get_map()
 
 page_bg_img = f"""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap')
-
+    .block-container {{
+        padding-top: 0.5rem;
+        }}
+    body {{
+        font-family: "Montserrat", serif;
+        }}
     h1 {{
-        margin-top: -100px;
-        font-family: 'Montserrat';
+        font-family: "Montserrat", serif;
         color: white;
         }}
     [data-testid="stAppViewContainer"] {{
@@ -54,14 +57,14 @@ page_bg_img = f"""
         background: rgba(0,0,0,0);
         }}
     iframe {{
-        flex-grow: 1; /* Allow the iframe to grow and take available space */
+        flex-grow: 1; 
         width: 100%;
         min-height: 80vh;
 }}
     :has(iframe) {{
         display: flex;
         flex-direction: column;
-        height: 100%; /* Ensure the container takes up the full height of its parent */
+        height: 100%; 
 }}
 </style>
 """
@@ -73,9 +76,9 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 
+st.title('Carte titre test')
 
 with st.container():  
-    st.title('Carte titre test')
     components.html(map_html)
 
 
