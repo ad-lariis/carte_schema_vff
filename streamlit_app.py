@@ -41,7 +41,7 @@ map_html = get_map()
 page_bg_img = f"""
 <style>
     h1 {{
-        margin-top: -100px;
+        margin-top: -500px;
         font-family: 'Montserrat';
         color: white;
         }}
