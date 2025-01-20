@@ -40,7 +40,7 @@ map_html = get_map()
 
 page_bg_img = f"""
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Montserrat')
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap')
 
     h1 {{
         margin-top: -100px;
