@@ -42,6 +42,7 @@ map_html = get_map()
 
 page_bg_img = f"""
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     .block-container {{
         padding-top: 0.5rem;
         }}
