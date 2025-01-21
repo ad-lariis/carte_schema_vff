@@ -46,14 +46,15 @@ page_bg_img = f"""
     .block-container {{
         padding-top: 0.5rem;
         }}
-    body {{
-        font-family: "Montserrat", serif;
-        }}
     h1 {{
         font-family: "Montserrat", serif;
         color: white;
-        font-size: 5px;
+        font-size: 1.6em;
         }}
+    body {{
+        font-family: "Montserrat", serif;
+        }}
+    
     [data-testid="stAppViewContainer"] {{
         background: rgb(0,140,149);
         }}
