@@ -13,17 +13,13 @@ import streamlit as st
 from st_files_connection import FilesConnection
 import streamlit.components.v1 as components
 from PIL import Image
-from pathlib import Path
+import requests
+from io import BytesIO
 
 
 
-
-
-path = Path.cwd()
-path_image = path / 'res/logo_page_noir.jpg'
-image = Image.open(path_image)
-
-
+response = requests.get('https://storage.googleapis.com/logo-lariis/logo_page_noir.jpg')
+image = Image.open(BytesIO(response.content))
 st.set_page_config(layout='wide', page_title='Offres services VFF', page_icon=image)
 
 
