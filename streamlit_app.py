@@ -12,13 +12,13 @@ Created on Fri Jan 17 11:56:39 2025
 import streamlit as st
 from st_files_connection import FilesConnection
 import streamlit.components.v1 as components
+from PIL import Image
 
 
+image = Image.open('res/logo_page_noir.jpg')
 
 
-
-
-st.set_page_config(layout='wide', page_title='Titre page')
+st.set_page_config(layout='wide', page_title='Offres services VFF', page_icon=image)
 
 
 @st.cache_data()
@@ -49,6 +49,7 @@ page_bg_img = f"""
     h1 {{
         font-family: "Montserrat", serif;
         color: white;
+        font-size: 1.8em;
         }}
     [data-testid="stAppViewContainer"] {{
         background: rgb(0,140,149);
@@ -76,7 +77,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 
-st.title('Carte titre test')
+st.title('Offres de services destinées aux femmes victimes de violences')
 
 with st.container():  
     components.html(map_html)
