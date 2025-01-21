@@ -52,7 +52,7 @@ page_bg_img = f"""
     h1 {{
         font-family: "Montserrat", serif;
         color: white;
-        font-size: 1.6em;
+        font-size: 5px;
         }}
     [data-testid="stAppViewContainer"] {{
         background: rgb(0,140,149);
